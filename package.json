@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
-    "build": "yarn; yarn build",
+    "build": "yarn; tsc",
     "start": "node ./dist/index.js"
   },
   "devDependencies": {
