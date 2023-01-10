@@ -10,8 +10,8 @@
   },
   "scripts": {
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
-    "build": "yarn; npx tsc",
-    "start": "node dist/index.js"
+    "build": "yarn; tsc",
+    "start": "node dist/src/index.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
