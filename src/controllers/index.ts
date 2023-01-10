@@ -15,7 +15,8 @@ export const ListController = async (req: Request, res: Response) => {
             month4,
         ])
     } catch (e) {
-        return res.status(400).json({ error: 'houve um erro interno' });
+        return res.send(e);
+        //return res.status(400).json({ error: 'houve um erro interno' });
     }
 }
 
